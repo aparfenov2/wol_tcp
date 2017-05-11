@@ -4,3 +4,7 @@
 /*.opendb
 /*.db
 /*.sln
+/pcap-cpp
+/pcap-h
+/pthd-i
+/pthd-l

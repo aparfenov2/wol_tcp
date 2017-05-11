@@ -87,14 +87,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>WpdPack\Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WPCAP;HAVE_REMOTE;_TIMESPEC_DEFINED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>WpdPack\Include;pcap-h;pthd-i</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>wpcap.lib;Packet.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>WpdPack\Lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wpcap.lib;Packet.lib;pthreadVC2.lib;Ws2_32.lib;IPHlpAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>WpdPack\Lib;pthd-l</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -148,7 +149,59 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="pcap-cpp\ArpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\DhcpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\DnsLayer.cpp" />
+    <ClCompile Include="pcap-cpp\DpdkDevice.cpp" />
+    <ClCompile Include="pcap-cpp\DpdkDeviceList.cpp" />
+    <ClCompile Include="pcap-cpp\EthLayer.cpp" />
+    <ClCompile Include="pcap-cpp\GreLayer.cpp" />
+    <ClCompile Include="pcap-cpp\HttpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\IcmpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\IgmpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\IpAddress.cpp" />
+    <ClCompile Include="pcap-cpp\IpUtils.cpp" />
+    <ClCompile Include="pcap-cpp\IPv4Layer.cpp" />
+    <ClCompile Include="pcap-cpp\IPv6Layer.cpp" />
+    <ClCompile Include="pcap-cpp\Layer.cpp" />
+    <ClCompile Include="pcap-cpp\light_advanced.c" />
+    <ClCompile Include="pcap-cpp\light_alloc.c" />
+    <ClCompile Include="pcap-cpp\light_internal.c" />
+    <ClCompile Include="pcap-cpp\light_io.c" />
+    <ClCompile Include="pcap-cpp\light_manipulate.c" />
+    <ClCompile Include="pcap-cpp\light_option.c" />
+    <ClCompile Include="pcap-cpp\light_pcapng.c" />
+    <ClCompile Include="pcap-cpp\light_pcapng_cont.c" />
+    <ClCompile Include="pcap-cpp\light_pcapng_ext.c" />
+    <ClCompile Include="pcap-cpp\light_platform.c" />
+    <ClCompile Include="pcap-cpp\Logger.cpp" />
+    <ClCompile Include="pcap-cpp\MacAddress.cpp" />
+    <ClCompile Include="pcap-cpp\MplsLayer.cpp" />
+    <ClCompile Include="pcap-cpp\NetworkUtils.cpp" />
+    <ClCompile Include="pcap-cpp\NullLoopbackLayer.cpp" />
+    <ClCompile Include="pcap-cpp\Packet.cpp" />
+    <ClCompile Include="pcap-cpp\PacketUtils.cpp" />
+    <ClCompile Include="pcap-cpp\PayloadLayer.cpp" />
+    <ClCompile Include="pcap-cpp\PcapDevice.cpp" />
+    <ClCompile Include="pcap-cpp\PcapFileDevice.cpp" />
+    <ClCompile Include="pcap-cpp\PcapFilter.cpp" />
+    <ClCompile Include="pcap-cpp\PcapLiveDevice.cpp" />
+    <ClCompile Include="pcap-cpp\PcapLiveDeviceList.cpp" />
+    <ClCompile Include="pcap-cpp\PcapRemoteDevice.cpp" />
+    <ClCompile Include="pcap-cpp\PcapRemoteDeviceList.cpp" />
+    <ClCompile Include="pcap-cpp\PfRingDevice.cpp" />
+    <ClCompile Include="pcap-cpp\PfRingDeviceList.cpp" />
+    <ClCompile Include="pcap-cpp\PPPoELayer.cpp" />
+    <ClCompile Include="pcap-cpp\RawPacket.cpp" />
+    <ClCompile Include="pcap-cpp\SllLayer.cpp" />
+    <ClCompile Include="pcap-cpp\SSLHandshake.cpp" />
+    <ClCompile Include="pcap-cpp\SSLLayer.cpp" />
+    <ClCompile Include="pcap-cpp\SystemUtils.cpp" />
+    <ClCompile Include="pcap-cpp\TcpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\UdpLayer.cpp" />
+    <ClCompile Include="pcap-cpp\VlanLayer.cpp" />
+    <ClCompile Include="pcap-cpp\WinPcapLiveDevice.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

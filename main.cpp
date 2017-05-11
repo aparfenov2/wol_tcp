@@ -37,7 +37,8 @@ int main()
 	int adapterNumber;
 
 	printf("Enter the adapter number between 1 and %d:", crtAdapter);
-	scanf("%d", &adapterNumber);
+	// scanf("%d", &adapterNumber);
+	adapterNumber = 2;
 
 	if (adapterNumber < 1 || adapterNumber > crtAdapter)
 	{

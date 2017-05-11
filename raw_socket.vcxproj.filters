@@ -13,10 +13,169 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\pcap">
+      <UniqueIdentifier>{9567a0b6-5ee4-463c-bba7-76d1937e3357}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="main2.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\ArpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\DhcpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\DnsLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\DpdkDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\DpdkDeviceList.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\EthLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\GreLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\HttpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IcmpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IgmpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IpAddress.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IpUtils.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IPv4Layer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\IPv6Layer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\Layer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\Logger.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\MacAddress.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\MplsLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\NetworkUtils.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\NullLoopbackLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\Packet.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PacketUtils.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PayloadLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapFileDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapFilter.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapLiveDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapLiveDeviceList.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapRemoteDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PcapRemoteDeviceList.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PfRingDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PfRingDeviceList.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\PPPoELayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\RawPacket.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\SllLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\SSLHandshake.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\SSLLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\SystemUtils.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\TcpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\UdpLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\VlanLayer.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\WinPcapLiveDevice.cpp">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_advanced.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_alloc.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_internal.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_io.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_manipulate.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_option.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_pcapng.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_pcapng_cont.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_pcapng_ext.c">
+      <Filter>Source Files\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap-cpp\light_platform.c">
+      <Filter>Source Files\pcap</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
