@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PcapPlusPlusHome>F:\robots\cpp\wol_tcp\PcapPlusPlus</PcapPlusPlusHome>
+    <WinPcapHome>F:\robots\cpp\wol_tcp\WpdPack</WinPcapHome>
+    <PThreadWin32Home>F:\robots\cpp\wol_tcp\pthreads-w32-2-9-1-release</PThreadWin32Home>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>
